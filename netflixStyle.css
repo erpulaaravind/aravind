@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans Caption", sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    word-break: keep-all;
+}
+.header{
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0.8),rgba(0, 0, 0, 0.123), rgba(0, 0, 0.8)), url(login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
+}
+.header nav{
+    margin: 20px 10%;
+}
+nav .logo{
+    width: 150px;
+    height: auto;
+    float: left;
+}
+@media  only screen and (max-width:700px) {
+    .header{
+        height: 500px;
+    }
+    .header nav{
+        margin: 30px 5%;
+    }
+    nav .logo{
+        float: left;
+        margin-left: 0px;
+        width: 100px;
+        height: 25px;
+    }
+}
+.nav-content{
+    float: right;
+}
+.nav-content select{
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 20px;
+    margin-right: 20px;
+}
+.nav-content button{
+    background-color: red;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: none;
+    color: white;
+}
+.header .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.header-content h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.header-content h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.header-content h5{
+    text-align: center;
+    font-size: larger;
+    margin-top: 20px;
+}
+.email-start{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px 0px;
+}
+.email-start .email{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding-left: 20px;
+    width: 50%;
+    height: 50px;
+    border: 1px solid aliceblue;
+}
+.email-start button{
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    text-wrap: nowrap;
+}
+@media only screen and (max-width:700px){
+    .header .content{
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+    }
+    .header-content h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .header-content h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .header-content h5{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .email-start{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .email-start .email{
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding-left: 20px;
+        width: 50%;
+        height: 50px;
+        border: 1px solid aliceblue;
+    }
+    .email-start button{
+        background-color: red;
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        width: max-content;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 5px;
+        text-wrap: nowrap;
+    }
+}
+.feature1, .feature2, .feature3, .feature4{
+    border-top: 4px solid rgb(40, 39, 39);
+    border-bottom: 4px solid rgb(40, 39, 39);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: auto;
+    padding: 0px 10%;
+    overflow: hidden;
+    word-break: keep-all;
+}
+.feature1-content h1, .feature2-content h1, .feature3-content h1, .feature4-content h1{
+    font-size: 3rem;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.feature1-content h3, .feature2-content h3, .feature3-content h3, .feature4-content h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+@media only screen and (min-width : 901px) and (max-width : 1040px){
+    .feature1-content h1, .feature2-content h1, .feature3-content h1, .feature4-content h1{
+        font-size: 2rem;
+    }
+    .feature1-content h3, .feature2-content h3, .feature3-content h3, .feature4-content h3{
+        font-size: 20px;
+        margin-top: 20px;
+    } 
+    .feature1-image img, .feature2-image img, .feature3-image img, .feature4-image img{
+        width: 500px;
+    }
+}
+@media only screen and (max-width:500px),(max-width : 900px) {
+    .feature1, .feature2, .feature3, .feature4{
+        display: block;
+        justify-content: center;
+    }
+    .feature1-content h1, .feature2-content h1, .feature3-content h1, .feature4-content h1{
+        font-family: "Londrina Solid", sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        word-break: keep-all;
+        margin-top: 20px;
+    }
+    .feature1-content h3,.feature2-content h3,.feature3-content h3,.feature4-content h3{
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: center;
+        word-break: keep-all;
+    }
+    .feature1-image, .feature2-image, .feature3-image, .feature4-image{
+        display: flex;
+        justify-content: center;
+    }
+    .feature1-image img, .feature2-image img, .feature3-image img, .feature4-image img{
+        width: 300px;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 2rem;
+        margin: 3% 10%;
+    }
+}
+.questions{
+    display: block;
+    padding-top: 10px;
+}
+.title h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 3%;
+}
+.question{
+    background-color: #434242d3;
+    margin: 10px 10%;  
+}
+.question button{
+    background-color: transparent;
+    padding: 30px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+.question button:hover{
+    background-color: #6b6868d3;
+}
+.answer1, .answer2, .answer3, .answer4, .answer5, .answer6{
+    border-top: 3px solid black;
+    padding: 20px;
+    background-color: #424242d3;
+    text-align: left;
+}
+button span{
+    float: right;
+}
+@media only screen and (max-width:500px){
+    .title h1{
+        text-align: left;
+        font-size: 1rem;
+        margin: 3% 10%;
+    }
+    .question button{
+        font-size: 15px;
+    }
+    .answer1, .answer2, .answer3, .answer4, .answer5, .answer6{
+        font-size: 15px;
+    }
+}
+.questions h3{
+    margin: 20px 10%;
+    text-align: center;
+}
+@media only screen and (min-width:500px){
+    .questions .email{
+        width: 30%;
+    }
+}
+.about{
+    text-align: center;
+    border-top: 7px solid #424242d3;
+    padding: 10%;
+}
